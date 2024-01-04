@@ -1,0 +1,132 @@
+[
+    {
+        "model":"web.Categories",
+        "pk":1,
+        "fields":{
+            "title":"Breakfast"
+        }
+    },
+    {
+        "model":"web.Categories",
+        "pk":2,
+        "fields":{
+            "title":"Lunch"
+        }
+    },
+    {
+        "model":"web.Categories",
+        "pk":3,
+        "fields":{
+            "title":"Evening food"
+        }
+    },
+    {
+        "model":"web.Categories",
+        "pk":4,
+        "fields":{
+            "title":"Dinner"
+        }
+    },
+    {
+        "model":"web.Categories",
+        "pk":5,
+        "fields":{
+            "title":"Any time"
+        }
+    },
+    {
+        "model":"web.Categories",
+        "pk":6,
+        "fields":{
+            "title":"other"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":1,
+        "fields":{
+            "title":"Dosa",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/dosa.jpg",
+            "user":1,
+            "category":"Breakfast"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":2,
+        "fields":{
+            "title":"Sambar",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/sambar.jpg",
+            "user":1,
+            "category":"Lunch"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":3,
+        "fields":{
+            "title":"Chicken chilly",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/chicken_chilly.jpg",
+            "user":1,
+            "category":"Any time"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":4,
+        "fields":{
+            "title":"Chicken biriyani",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/chicken_biriyani.jpg",
+            "user":1,
+            "category":"Lunch"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":5,
+        "fields":{
+            "title":"Idili",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/idili.jpg",
+            "user":1,
+            "category":"Breakfast"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":6,
+        "fields":{
+            "title":"Bread roast",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/bread_roast.jpg",
+            "user":1,
+            "category":"Dinner"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":7,
+        "fields":{
+            "title":"Porotta",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/porota.jpg",
+            "user":1,
+            "category":"Evening food"
+        }
+    },
+    {
+        "model":"web.Recipes",
+        "pk":8,
+        "fields":{
+            "title":"Salad",
+            "description":"To make the batter, first the lentils and rice are soaked in water for 4 to 5 hours. They are then ground separately to a fine consistency. Then both the lentil batter and the rice batter are mixed with salt in a wide bowl or pan. This batter is then allowed to ferment overnight or for 8 to 9 hours. After the batter is fermented, it increases in volume, has a pleasant fermented aroma and a slightly sour taste. A well-fermented batter makes the best dosa. You will also see many tiny air-pockets in the batter. Making the batter and then fermenting it is such a joy that I always look forward to making fermented foods like dosa and Idli.",
+            "image":"rimages/salad.jpg",
+            "user":1,
+            "category":"other"
+        }
+    }
+]

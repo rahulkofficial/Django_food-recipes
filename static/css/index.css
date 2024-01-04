@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    font-family: "baloo_paaji_2regular";
+}
+
+@font-face {
+    font-family: "baloo_paaji_2regular";
+    src: url("../fonts/baloopaaji2-regular-webfont.woff2")
+            format("woff2"),
+        url("../fonts/baloopaaji2-regular-webfont.woff")
+            format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+section.main{
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+}
+section.main section.wrapper{
+    width:68%;
+    margin:0px auto;
+    padding-bottom:40px;
+}
+section.main section.wrapper h1{
+    margin-top: 180px;
+    text-align: center;
+    font-size: 30px;
+    color: #dd5b0f;
+}
+ section.main section.wrapper form{
+    margin-top: 10px;
+    background-color:#e4e458;
+    padding: 40px 0px;
+    text-align: center;
+    border-radius: 20px;
+}
+section.main section.wrapper form span{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+section.main section.wrapper form p{
+    color: #c91515;
+    font-size: 14px;
+}
+section.main section.wrapper form label{
+    color:#dd5b0f;
+    font-weight: 600;
+}
+section.main section.wrapper form input{
+    font-size: 14px;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+}
+section.main section.wrapper form textarea{
+    border-radius: 10px;
+    padding: 5px;
+}
+section.main section.wrapper form select{
+    width: 50%;
+    border-radius: 8px;
+}
+section.main section.wrapper form span.button{
+    justify-content: center;
+}
+
+section.main section.wrapper form span.button button{
+    text-align: center;
+    background-color: #df650e;
+    border: 1px solid #fff;
+    margin-top: 16px;
+    color: #fff;
+    padding:5px 20px;
+    cursor: pointer;
+    border-radius: 10px ;
+    margin-right: 40px;
+}
+section.main section.wrapper form span.button button:hover{
+    background-color: #c47917;
+}
+
+section.main section.wrapper form span.button a.button{
+    text-align: center;
+    background-color: #df650e;
+    border: 1px solid #fff;
+    margin-top: 16px;
+    color: #fff;
+    padding:5px 20px;
+    cursor: pointer;
+    border-radius: 10px ;
+    text-decoration: none;
+}
+section.main section.wrapper form span.button a.button:hover{
+    background-color: #c47917;
+}
+
+
+section.all section.wrapper{
+    width: 96%;
+    margin: 0 auto;
+}
+section.all section.wrapper header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.all section.wrapper header div{
+    display: flex;
+    align-items: center;
+}
+section.all section.wrapper header div h1 a img{
+    width: 50px;
+}
+section.all section.wrapper header div h1.name{
+    margin-left: 20px;
+    font-size: 24px;
+    color: #df650e;
+}
+section.all section.wrapper header div a.button{
+    text-align: center;
+    background-color: #df650e;
+    border: 1px solid #fff;
+    margin-top: 16px;
+    color: #fff;
+    padding:5px 20px;
+    cursor: pointer;
+    border-radius: 10px ;
+    text-decoration: none;
+    margin-right: 20px;
+}
+section.all section.wrapper header div a.button:hover{
+    background-color: #c47917;
+}
+section.all section.wrapper header div div p{
+    font-size: 14px;
+    color: #555252;
+    width: 80%;
+    text-align: center;
+}
+section.all section.wrapper section.list div.top{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section.all section.wrapper section.list div.top h1{
+    font-size: 30px;
+    color: #c47917;
+}
+section.all section.wrapper section.list div.top div{
+    display: flex;
+    align-items: center;
+}
+section.all section.wrapper section.list div.top div form span{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #2f2f2d;
+    padding: 5px;
+    border-radius: 8px;
+}
+section.all section.wrapper section.list div.top div form button{
+    text-align: center;
+    background-color: #df650e;
+    border: 1px solid #fff;
+    margin-top: 16px;
+    color: #fff;
+    padding:5px 20px;
+    cursor: pointer;
+    border-radius: 10px ;
+    text-decoration: none;
+    display: block;
+}
+section.all section.wrapper section.list div.top div form button:hover{
+    background-color: #c47917;
+}
+section.all section.wrapper section.list div.top div form img{
+    margin-right: 10px;
+    width: 20px;
+}
+section.all section.wrapper section.list div.top div form input{
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    outline: none;
+}
+section.all section.wrapper section.list div.top div select{
+    padding: 5px;
+    color: #555252;
+    border-radius: 8px;
+}
+section.all section.wrapper section.list div.bottom{
+    margin-top: 40px;
+}
+section.all section.wrapper section.list div.bottom h1{
+    color: #982311;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 160px;
+}
+section.all section.wrapper section.list div.bottom ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 14px;
+}
+section.all section.wrapper section.list div.bottom ul li{
+    display: inline-block;
+    width: 23.8%;
+    cursor: pointer;
+    border: 1px solid #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+section.all section.wrapper section.list div.bottom ul li:hover{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    margin:-10px 0px 20px;
+}
+section.all section.wrapper section.list div.bottom ul li a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 30px 30px 20px;
+}
+
+section.all section.wrapper section.list div.bottom ul li a img{
+    display:block;
+    width: 68%;
+    height:160px;
+    margin: 0 auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+section.all section.wrapper section.list div.bottom ul li a h3{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    color: #da7510;
+    font-size: 24px;
+}
+section.all section.wrapper section.list div.bottom ul li a p{
+    display: inline-block;
+    font-size: 16px;
+    background-color: #e0880d ;
+    font-weight: 600;
+    border-radius: 10px;
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin:0px;
+}
+section.all section.wrapper section.list div.bottom ul li div{
+    display: block;
+    text-align: center;
+}
+section.all section.wrapper section.list div.bottom ul li div a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px 30px;
+    text-decoration: none;
+}
+section.all section.wrapper section.list div.bottom ul li div a h4{
+    margin: 0px;
+    color: #000;
+}
+section.all section.wrapper section.list div.bottom ul li div a img{
+    width: 12%;
+    height: 20px;
+    margin: 0px;
+}
+section.all section.wrapper section.details div.top h1{
+    font-size: 32px;
+    color: #dd5b0f;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 0px;
+}
+section.all section.wrapper section.details div.top p{
+    font-size: 20px;
+    color: #e0880d;
+    margin-top: 0px;
+    text-align: center;  
+}
+section.all section.wrapper section.details div.bottom img{
+    display: block;
+    width: 16%;
+    border-radius: 10px;
+    margin:0 auto;
+}
+section.all section.wrapper section.details div.bottom h2{
+    font-size: 26px;
+    color: #da7510;
+}
+section.all section.wrapper section.details div.bottom p{
+    font-size: 18px;
+    padding:0 32px;
+    color: #985e11;
+}
+
+@media all and (max-width:1200px){
+    section.all section.wrapper section.list div.bottom ul li{
+        width: 32%;
+    }
+}
+
+@media all and (max-width:980px){
+    section.all section.wrapper section.list div.bottom ul li{
+        width: 48%;
+    }
+}
+
+@media all and (max-width:768px){
+    section.all section.wrapper header{
+        display: block;
+    }
+    section.all section.wrapper section.list div.bottom h1{
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:680px){
+    section.main section.wrapper{
+        width: 100%;
+    }
+    
+    section.main section.wrapper form span{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    section.main section.wrapper form label{
+        margin-right: 100px;
+    }
+    section.main section.wrapper form input{
+        width: 80%;
+    }
+    section.main section.wrapper form span.button button{
+        margin: 0px;
+    }
+    section.main section.wrapper form a.button{
+        font-size: 12px;
+        text-align: center;
+    }
+    section.main section.wrapper form textarea{
+        border-radius: 10px;
+        padding: 5px;
+        width: 80%;
+        height: 80px;
+    }
+    section.all section.wrapper section.list div.bottom ul{
+        justify-content: center;
+    }
+    section.all section.wrapper section.list div.bottom ul li{
+        width: 90%;
+    }
+    section.all section.wrapper section.list div.top h1{
+        font-size: 20px;
+    }
+    section.all section.wrapper section.details div.bottom img{
+        width: 24%;
+    }
+}
+@media all and (max-width:480px){
+    section.main section.wrapper h1{
+        font-size: 20px;
+    }
+    section.main section.wrapper form label{
+        margin: 0;
+    }
+    section.all section.wrapper header div a.button{
+        font-size: 8px;
+    }
+    section.all section.wrapper section.list div.bottom h1{
+        font-size: 16px;
+    }
+    section.all section.wrapper section.list div.top {
+        display: block;
+    }
+    section.all section.wrapper section.details div.top h1 {
+        font-size: 20px;
+    }
+    section.all section.wrapper section.details div.top p{
+        font-size: 14px;
+    }
+    section.all section.wrapper header div{
+        flex-wrap: wrap;
+    }
+    section.all section.wrapper section.details div.bottom h2{
+        font-size: 16px;
+    }
+    section.all section.wrapper section.details div.bottom p{
+        font-size: 12px;
+    }
+}

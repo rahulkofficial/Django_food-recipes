@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
+        <link rel="icon" href="{% static 'images/logo.png' %}" sizes="500x500" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Recipes | Update Recipe</title>
+        <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+        <script src="{% static 'js/index.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css" rel="stylesheet" />
+    </head>
+<body>
+    <section class="main">
+        <section class="wrapper">
+            <h1 style="margin-top: 100px;">Update Recipe</h1>
+            <form class="update" enctype="multipart/form-data">
+                {% csrf_token %}
+                <span class="first_name">
+                    <label for="rname">Recipe name</label>
+                    <input id="rname" type="text" value="{{recipe.title}}" placeholder="Recipe name" name="title" required />
+                </span>
+                {% if image != "No" %}
+                    <span>
+                        <label for="imagec">Current Image</label>
+                            <a href="{{recipe.image}}">{{image}}</a>
+                    </span>
+                {% else %}
+                    <span>
+                        <label for="imagec">Current Image</label>
+                        <p>NO image</p>
+                    </span>
+                {% endif %}
+                <span class="last_name">
+                    <label for="image">Image</label>
+                    <input id="image" type="file"  name="file" />
+                </span>
+                <span class="emailc">
+                    <label for="recipe">Recipe</label>
+                    <textarea name="description" id="recipe" cols="54" rows="5" required>{{recipe.description}}</textarea>
+                </span>
+                <span class="select">
+                    <label for="cat">Category</label>
+                    <input type="text" name="category" id="cat" value="{{recipe.category}}" required />
+                </span>
+                <span class="button">
+                    <button type="submit">Update Recipe</button>
+                    <a href="{% url 'web:recipes' %}" class="button">Cancel</a>
+                </span>
+                <!-- for js purpose -->
+                <input type="text" class="token" style="display:none;" value="{{token}}" />
+                <input type="text" class="rec_up" style="display:none;" value="{{recipe.id}}" />
+            </form>
+        </section>
+    </section>
+</body>
+</html>

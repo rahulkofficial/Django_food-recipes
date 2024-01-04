@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/index.css' %}" type="text/css" />
+        <link rel="icon" href="{% static 'images/logo.png' %}" sizes="500x500" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Recipes | Recipe</title>
+        <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+        <script src="{% static 'js/index.js' %}"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.all.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.27/dist/sweetalert2.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <section class="all">
+            <section class="wrapper">
+                <header>
+                    <div>
+                        <h1><a href="{% url 'web:recipes' %}"><img src="{% static 'images/logo.png' %}" alt="logo" /></a></h1>
+                        <h1 class="name">Food Recipes</h1>
+                    </div>
+                    <div>
+                        <a href="{% url 'web:recipes' %}" class="button">Home</a>
+                        {% if recipe.user == user_id %}
+                            <a href="update/{{recipe.id}}" class="button">Update Recipe</a>
+                            <a href="delete/{{recipe.id}}" class="button" id="delete_button">Delete Recipe</a>
+                        {% endif %}
+                        <a href="{% url 'web:logout' %}" class="button">Log Out</a>
+                        <div>
+                            {% if recipe.user == user_id %}
+                                <p>Your Recipe</p>
+                            {% else %}
+                                <p>You can't update or delete because this recipe is not your</p>
+                            {% endif %}
+                        </div>
+                    </div>
+                </header>
+                <section class="details">
+                    <div class='top'>
+                        <h1>{{recipe.title}}</h1>
+                        <p>{{recipe.category}}</p>
+                    </div>
+                    <div class='bottom'>
+                        {% if recipe.image %}
+                            <img src="{{recipe.image}}" alt="img" />
+                        {% else %}
+                            <img src="{% static 'images/recipe.jpg' %}" alt="img" />
+                        {% endif %}
+                        <h2>Recipe</h2>
+                        <p>{{recipe.description}}</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </body>
+</html>
